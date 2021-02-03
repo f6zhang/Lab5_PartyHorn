@@ -1,7 +1,5 @@
 // main.js
 
-// TODO
-
 let volumn = 100;
 let textfield = document.getElementById("volume-number");
 let slider = document.getElementById("volume-slider");
