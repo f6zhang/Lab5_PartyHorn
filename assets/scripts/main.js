@@ -80,7 +80,7 @@ button.onclick = function(event){
         audio.volume = volumn / 100;
         audio.play();
     }
-    if (choice == 1){
+    if (choice == 3){
         let audio = new Audio("./assets/media/audio/party-horn.mp3");
         audio.volume = volumn / 100;
         audio.play();
