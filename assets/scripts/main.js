@@ -86,7 +86,7 @@ button.onclick = function(){
     }
 };
 
-button.addEventListener('submit', function(event){
+button.onsubmit = function(event){
     event.preventDefault();
-});
+};
 
