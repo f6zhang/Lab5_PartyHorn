@@ -65,7 +65,8 @@ party.onclick = function(){
 
 let button = document.getElementById("honk-btn");
 
-button.onclick = function(){
+button.onclick = function(event){
+    event.preventDefault();
     if (volumn == 0){
         return;
     }
@@ -85,8 +86,3 @@ button.onclick = function(){
         audio.play();
     }
 };
-
-button.onsubmit = function(event){
-    event.preventDefault();
-};
-
