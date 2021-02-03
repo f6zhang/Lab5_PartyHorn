@@ -51,7 +51,7 @@ car.onclick = function(){
     air.value = false;
     car.value = true;
     party.value = false;
-    image.src = "./assets/media/images/car-horn.svg";
+    image.src = "./assets/media/images/car.svg";
     choice = 2;
 };
 
@@ -71,17 +71,17 @@ button.onclick = function(){
     }
     if (choice == 1){
         let audio = new Audio("./assets/media/audio/air-horn.mp3");
-        audio.volume = volumn;
+        audio.volume = volumn / 100;
         audio.play();
     }
     if (choice == 2){
         let audio = new Audio("./assets/media/audio/car-horn.mp3");
-        audio.volume = volumn;
+        audio.volume = volumn / 100;
         audio.play();
     }
     if (choice == 1){
         let audio = new Audio("./assets/media/audio/party-horn.mp3");
-        audio.volume = volumn;
+        audio.volume = volumn / 100;
         audio.play();
     }
 };
