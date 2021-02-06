@@ -10,6 +10,8 @@ let button = document.getElementById("honk-btn");
 textfield.onchange = function(){
     volumn = textfield.value;
     slider.value = volumn;
+    button.disabled = false;
+    
     if (volumn >= 67 && volumn <= 100){
         volumn_image.src = "./assets/media/icons/volume-level-3.svg";
     }else if (volumn >= 34){
@@ -26,6 +28,8 @@ textfield.onchange = function(){
 slider.onchange = function(){
     volumn = slider.value;
     textfield.value = volumn;
+    button.disabled = false;
+    
     if (volumn >= 67 && volumn <= 100){
         volumn_image.src = "./assets/media/icons/volume-level-3.svg";
     }else if (volumn >= 34){
