@@ -18,9 +18,9 @@ textfield.onchange = function(){
         volumn_image.src = "./assets/media/icons/volume-level-1.svg";
     }else{
         volumn_image.src = "./assets/media/icons/volume-level-0.svg";
+        button.disabled = true;
     }
     
-    button.disable = true;
 };
 
 slider.onchange = function(){
@@ -34,9 +34,9 @@ slider.onchange = function(){
         volumn_image.src = "./assets/media/icons/volume-level-1.svg";
     }else{
         volumn_image.src = "./assets/media/icons/volume-level-0.svg";
+        button.disabled = true;
     }
-    
-    button.disable = true;
+   
 };
 
 let image = document.getElementById("sound-image");
