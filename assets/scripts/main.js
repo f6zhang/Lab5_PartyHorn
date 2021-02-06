@@ -5,6 +5,8 @@ let textfield = document.getElementById("volume-number");
 let slider = document.getElementById("volume-slider");
 let volumn_image = document.getElementById("volume-image");
 
+let button = document.getElementById("honk-btn");
+
 textfield.onchange = function(){
     volumn = textfield.value;
     slider.value = volumn;
@@ -17,6 +19,8 @@ textfield.onchange = function(){
     }else{
         volumn_image.src = "./assets/media/icons/volume-level-0.svg";
     }
+    
+    button.disable = true;
 };
 
 slider.onchange = function(){
@@ -31,6 +35,8 @@ slider.onchange = function(){
     }else{
         volumn_image.src = "./assets/media/icons/volume-level-0.svg";
     }
+    
+    button.disable = true;
 };
 
 let image = document.getElementById("sound-image");
@@ -63,7 +69,7 @@ party.onclick = function(){
     choice = 3;
 };
 
-let button = document.getElementById("honk-btn");
+
 
 button.onclick = function(event){
     event.preventDefault();
